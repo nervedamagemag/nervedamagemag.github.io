@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 12vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+}
+
+img{
+    display: inline-block;
+}
+
+.home{
+    width:5vw; 
+    position: fixed; 
+    float: left; 
+    margin-top: -12vh; 
+    cursor: pointer;
+}
+
+.home:hover{
+    width:6vw;
+}
+
+
+.toggle{
+    height: 20vw;
+    width: 20vw;
+    display: inline-block;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.toggle:hover{
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+img.rotate:hover{
+    transform: rotate(8deg);
+}
+
+.head{
+    width: 100vw;
+    margin-left: -3vw;
+    margin-top: -12vh;
+    height: 10vh;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5vh;
+    color: white;
+} 
+
+h3{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+    width: 30vw;
+}
+
+.button{
+    height: 2.5vh;
+    margin-right: 1vw;
+    margin-top: 2vh;
+    width: 5vw;
+    color: black;
+    background-color: rgb(223, 222, 222);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5vh;
+    
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+}
+
+.deathClock{
+    position: relative;
+    float: right;
+    width: 28vw;
+}
+
+.deathClock span{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3vh;
+}
+
+.deathClock h4{
+    font-size: 3vh;
+}
+
+#past{
+    display: inline-block;
+}

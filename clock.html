@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> When should you die? </title>
+        <link rel="stylesheet" href="./styles.css">
+        <script type = "text/javascript" src= "./script.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            window.$_GET = new URLSearchParams(location.search);
+            var date = $_GET.get('d').split(",");
+            var age = $_GET.get('a');
+        </script>
+        <div class="head"><h1> When should you die? </h1></div>
+        <img class='home' src='images/skull.gif' alt='climate collapse' onclick="window.location.replace('./start.html')">
+        <p class='home' style='color: white; position: fixed; margin-left: 0.7vw;'>Home</p>
+        <h2>Reduce your time on Earth!</h2>
+        <h3 style='width: 30vw'>You will live to be <i id='age'></i></h3>
+        <div id='past'></div>
+        <div class='deathClock'>
+            <h4>Date of death: <i id='date'></i></h4>
+            <h4>Time left:</h4>
+            <div id="countdown"></div>
+            <br><br>
+            <h4>Date of collapse: <i>2050</i></h4>
+            <h4>Time left:</h4>
+            <div id="collapse"></div>
+        </div>
+        <div class='toggle' onclick="neg(-1);">
+            <p>Crack one open</p>
+            <img class='rotate' src='images/beer.gif' alt='climate collapse' style= 'width:20vw; margin-left: -10vw;'>
+        </div>
+        <div class='toggle' onclick="neg(-3);">
+            <p>Smoke a pack</p>
+            <img class='rotate' src='images/cig.gif' alt='climate collapse' style='width:20vw;'>
+        </div>
+        <div class='toggle' onclick="neg(-5);">
+            <p>Overdose on sugar</p>
+            <img class='rotate' src='images/soda.gif' alt='climate collapse' style='width:8vw;'>
+        </div>
+        <br><br><br>
+        <h2 style='display: inline;'>See your additional recommended weekly intake:</h2>
+        <h4 style='display: inline; font-size: 2vh;'><span id='beer'>0</span> Beers; <span id='cigs'>0</span> Packs of cigs; <span id='sugar'>0</span> Grams of sugar</h4>
+        <button class='button' onClick="window.location.reload();">Reset</button>
+    </body>
+    <script>fillDeath(date, age);</script>
+</html>

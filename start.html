@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title> When should you die? </title>
+        <link rel="stylesheet" href="./styles.css">
+        <script type = "text/javascript" src= "./script.js"></script>
+    </head>
+
+    <body>
+        <div class="head"><h1> When should you die? </h1></div>
+        <img src='images/collapse.png' alt='climate collapse' style='width:40vw'><img src='images/skull.gif' alt='climate collapse' style='width:40vw; position: absolute; margin-top: -12vh; margin-left: 12vw;'>
+        <br>
+        <h2>As most people are aware by now, the climate will likely collapse by 2050. What if there was a way for you to never have to see that happen?!</h2>
+        <br>
+        <h2><i>First... </i>Let us calculate when you will die:</h2>
+        <form name="quiz" id="quiz">
+            <h3> Demographics </h3><br>
+            <b>1) When were you born?</b><br>
+            <input type="date" id="one" name="one"
+                value="2003-01-01"
+                min="1940-01-01" max="2015-01-01"><br><br>
+
+            <b>2) What is your Sex?</b><br>
+            <input type= "radio" name= "two" value= "male" id= "2a">
+            <label for= "family">Male</label>
+            <input type= "radio" name= "two" value= "female" id= "2b">
+            <label for= "family">Female</label>
+            <input type= "radio" name= "two" value= "q" id= "2c">
+            <label for= "family">?</label><br><br>
+
+            <h3> Personality </h3><br>
+            <b>3) You just dropped your favorite food on your floor, are you eating it? </b><br>
+            <input type= "radio" name= "three" value= "a" id= "3a">
+            <label for= "3a">naw</label><br>
+            <input type= "radio" name= "three" value= "b" id= "3b">
+            <label for= "3b">yes, 5 second rule</label><br>
+            <input type= "radio" name= "three" value= "c" id= "3c">
+            <label for= "3c">depends, is anyone watching?</label><br>
+            <input type= "radio" name= "three" value= "d" id= "3d">
+            <label for= "3d">yes!</label><br><br>
+            <b>4) Do you smoke </b><br>
+            <input type= "radio" name= "four" value= "a" id= "4a">
+            <label for= "4a">smoke what?</label><br>
+            <input type= "radio" name= "four" value= "b" id= "4b">
+            <label for= "4b">yes</label><br>
+            <input type= "radio" name= "four" value= "c" id= "4c">
+            <label for= "4c">not a lot</label><br>
+            <input type= "radio" name= "four" value= "d" id= "4d">
+            <label for= "4d">no</label><br>
+            <br>
+            <b>5) How many drinks(Alcohol) do you have per week? </b>
+            <br>
+            <br>
+            <select name="five" id="5a" name='five'>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option vlaue="7">7</option>
+                <option vlaue="Alcoholic">I'm an Alcoholic</option>
+            </select>
+            <br><br>
+            <input class="button" type="button" value="Submit" onclick="calc(document.quiz.one.value, document.quiz.two.value, document.quiz.three.value, document.quiz.four.value, document.quiz.five.value)"> <input class="button" type="reset" value="Clear">
+        </form>
+        <div id = "grade"></div>
+    </body>
+</html>
